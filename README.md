@@ -16,5 +16,5 @@ Customised [Ketcher](https://github.com/epam/ketcher) chemical structure editor 
 | `just build` | Build Docker image and tag for local digabi2 use. Run `just start` in digabi2 repo after to test. |
 | `just test` | Run Playwright smoke test |
 | `just lint` | Run ESLint and TypeScript checks |
-| `just dev-release <patch|minor|major>` | Trigger a dev release to ECR |
+| `just dev-release <patch\|minor\|major>` | Trigger a dev release to ECR |
 | `just prod-release` | Promote to production ECR |
