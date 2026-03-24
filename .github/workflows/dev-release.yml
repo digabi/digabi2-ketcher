@@ -1,0 +1,16 @@
+name: Dev release
+
+on:
+  push:
+    tags: '**'
+
+concurrency:
+  group: ${{ github.ref_name }}
+
+jobs:
+  dev-release:
+    uses: digabi/workflows-common/.github/workflows/digabi2-companion-app-dev-release.yml@main
+    with:
+      app-name: ketcher
+    secrets:
+      AWS_ACCOUNT_ID: ${{ secrets.UTILITY_AWS_ACCOUNT_ID }}

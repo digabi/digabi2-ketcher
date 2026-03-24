@@ -1,0 +1,21 @@
+name: Manual production release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag
+        required: true
+        type: string
+
+concurrency:
+  group: ${{ inputs.tag }}
+
+jobs:
+  release:
+    uses: digabi/workflows-common/.github/workflows/digabi2-companion-app-prod-release.yml@main
+    with:
+      app-name: ketcher
+      tag: ${{ inputs.tag }}
+    secrets:
+      AWS_ACCOUNT_ID: ${{ secrets.UTILITY_AWS_ACCOUNT_ID }}
