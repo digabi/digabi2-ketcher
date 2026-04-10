@@ -14,7 +14,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - uses: extractions/setup-just@v3
+      - uses: extractions/setup-just@v4
       - run: npm ci
       - run: just lint
 
@@ -26,7 +26,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - uses: extractions/setup-just@v3
+      - uses: extractions/setup-just@v4
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: just test
