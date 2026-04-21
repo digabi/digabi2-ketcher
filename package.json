@@ -15,7 +15,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@digabi/eslint-config": "^3.4.0",
+    "@digabi/eslint-config": "^4.0.1",
     "@playwright/test": "^1.59.1",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
