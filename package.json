@@ -12,7 +12,7 @@
     "ketcher-react": "3.12.0",
     "ketcher-standalone": "3.12.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@digabi/eslint-config": "^3.4.0",
